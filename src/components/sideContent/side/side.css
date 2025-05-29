@@ -1,0 +1,22 @@
+/* AD */
+.banner {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Category */
+.catgorys .category1 {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.category1 {
+  color: #fff;
+}

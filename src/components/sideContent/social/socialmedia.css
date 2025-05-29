@@ -1,0 +1,84 @@
+.social {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.social .socBox {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.social .socBox:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.social .socBox i {
+  margin-right: 1.5rem;
+  font-size: 2rem;
+}
+
+.social .socBox span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Cores específicas */
+.facebook { background-color: #1877F2; }
+.telegram { background-color: #0088CC; }
+.twitter { background-color: #000000; }
+.instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); }
+.tiktok { background-color: #000000; }
+.youtube { background-color: #FF0000; }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .social {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Adicione ao seu CSS existente */
+.socBox {
+  position: relative;
+  overflow: hidden;
+}
+
+.socBox::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: 0.5s;
+}
+
+.socBox:hover::after {
+  left: 100%;
+}
+
+/* Melhor contraste para o Twitter/X */
+.twitter {
+  color: #fff !important;
+  background: #000 !important;
+}
+
+/* Efeito pulsante no hover */
+.socBox:hover i {
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

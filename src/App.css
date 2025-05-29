@@ -1,0 +1,151 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+span,
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.paddingTB {
+  padding: 4rem 0;
+}
+
+.paddingSmall {
+  padding: 2rem 0;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 3rem;
+}
+
+.category {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  background: linear-gradient(to right, #c45048 50%, #235185 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+
+  border-left: 0.5rem solid #c45048;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-position: left bottom;
+}
+
+.row {
+  width: 50%;
+}
+
+.images {
+  position: relative;
+}
+
+.category1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 0.5rem solid #c45048;
+  width: auto;
+  display: block;
+  background: linear-gradient(to right, #c45048 50%, #235185 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.category1 span {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+
+.category1:hover {
+  background-position: left bottom;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.comment i,
+.sub i,
+.share i {
+  color: #235185;
+  font-size: 1.3rem;
+  padding-right: 0.2rem;
+}
+
+.comment label,
+.sub label,
+.share label {
+  font-size: 1.3rem;
+  color: #534f4f;
+}
+
+.desc {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.304) 0 1.5rem 1rem -1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .flexSB {
+    justify-content: center;
+  }
+}

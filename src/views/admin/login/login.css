@@ -1,0 +1,166 @@
+
+:root {
+  --main-color: #c45048;
+  --secondary-color: #235185;
+}
+
+.container-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url(../../../../public/images/bg-login.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.screen {
+  background-color: var(--main-color);
+  position: relative;
+  height: 55rem;
+  width: 36rem;
+  box-shadow: 0 0 2.4rem var(--main-color);
+}
+
+.screen__content {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.screen__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+}
+
+.screen__background__shape {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.screen__background__shape1 {
+  height: 52rem;
+  width: 52rem;
+  background: #fff;
+  top: -5rem;
+  right: 12rem;
+  border-radius: 0 7.2rem 0 0;
+}
+
+.screen__background__shape2 {
+  height: 22rem;
+  width: 22rem;
+  background: var(--secondary-color);
+  top: -17.2rem;
+  right: 0;
+  border-radius: 3.2rem;
+}
+
+.screen__background__shape3 {
+  height: 54rem;
+  width: 19rem;
+  background: var(--secondary-color);
+  top: -2.4rem;
+  right: 0;
+  border-radius: 3.2rem;
+}
+
+.screen__background__shape4 {
+  height: 40rem;
+  width: 20rem;
+  background: var(--secondary-color);
+  top: 42rem;
+  right: 5rem;
+  border-radius: 6rem;
+}
+
+.login {
+  width: 32rem;
+  padding: 8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login p {
+  font-size: 1.2rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.login-logo {
+  width: 75%;
+  padding-bottom: 1rem;
+}
+
+.login-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.login__field {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.login__icon {
+  position: absolute;
+  top: 3rem;
+  color: var(--main-color);
+}
+
+.login__input {
+  border: none;
+  border-bottom: 0.2rem solid #d1d1d4;
+  background: none;
+  padding: 1rem;
+  padding-left: 2.4rem;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: var(--main-color);
+}
+
+.login__submit {
+  background: #fff;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  padding: 1.6rem 2rem;
+  border-radius: 2.6rem;
+  border: 0.1rem solid #d4d3e8;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--main-color);
+  box-shadow: 0 0.2rem 0.2rem var(--main-color);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+.button__icon {
+  font-size: 2.4rem;
+  margin-left: auto;
+  color: var(--main-color);
+}

@@ -1,0 +1,23 @@
+.heading {
+  height: 3.5rem;
+  margin: 3rem 0;
+
+  background-image: url("../../../public/images/title_pattern.png");
+  background-position: center;
+  border-radius: 0.5rem;
+}
+.heading h6 {
+  height: 3.5rem;
+  width: max-content;
+  padding: 0 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  background: #ca322d;
+  color: #fff;
+  border-radius: 0.5rem;
+}

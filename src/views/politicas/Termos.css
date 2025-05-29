@@ -1,0 +1,107 @@
+/* Estilo base */
+.termos-container {
+  width: 100%;
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.termos-content {
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 4rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+  line-height: 1.8;
+}
+
+.termos-content h1 {
+  font-size: 3rem;
+  color: #c45048;
+  margin-bottom: 1rem;
+}
+
+.termos-content .data {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 2rem;
+}
+
+.termos-content h2 {
+  font-size: 2rem;
+  color: #c45048;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.termos-content p {
+  font-size: 1.5rem;
+}
+
+.termos-content p.alert {
+  background-color: rgba(255, 210, 210, 0.5);
+  padding: 1rem;
+  border-left: 4px solid #c45048;
+  border-radius: 0.5rem;
+  color: #c45048;
+  font-weight: bold;
+}
+
+.termos-content a {
+  color: #c45048;
+  text-decoration: none;
+}
+
+.termos-content a:hover {
+  text-decoration: underline;
+}
+
+/* Tablets até 991px */
+@media screen and (max-width: 991px) {
+  .termos-content {
+    padding: 3rem;
+  }
+
+  .termos-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .termos-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .termos-content p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Smartphones até 600px */
+@media screen and (max-width: 600px) {
+  .termos-container {
+    padding: 3rem 1rem;
+  }
+
+  .termos-content {
+    padding: 2rem;
+  }
+
+  .termos-content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .termos-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .termos-content p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .termos-content p.alert {
+    font-size: 1.2rem;
+  }
+}
