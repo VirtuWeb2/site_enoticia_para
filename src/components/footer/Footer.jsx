@@ -57,7 +57,7 @@ const Footer = () => {
             <span> | </span>
             <Link to="/politica-de-privacidade">Política de Privacidade</Link>
           </div>
-          <p>© 2025 - Todos os direitos reservados para Virtù Conect</p>
+          <p>© 2025 - Todos os direitos reservados para É Notícia Pará</p>
         </div>
       </div>
     </>
