@@ -1,23 +1,34 @@
 import React from "react";
 import LinksFooter from "./LinksFooter";
-import "./footer.css";
+import LinksFooterRegioes from "./LinksFooterRegioes";
 import { Link } from "react-router-dom";
+import "./footer.css";
 
 const Footer = () => {
   return (
     <>
       <footer>
         <div className="containerFooter">
-          <nav className="linksBox">
+          {/* EN Regiões - Esquerda */}
+          <div className="linksRegioes">
+            <h1>
+              <i className="fa-solid fa-filter"></i> EN Regiões:
+            </h1>
+            <LinksFooterRegioes />
+          </div>
+
+          {/* EN Municipais - Centro */}
+          <div className="linksMunicipios">
             <h1>
               <i className="fa-solid fa-filter"></i> EN Munícipais:
             </h1>
             <LinksFooter />
-          </nav>
+          </div>
 
+          {/* Logo e Texto - Direita */}
           <section className="box">
             <div className="logo">
-              <img src="../images/logo.png" alt="" />
+              <img src="../images/logo.png" alt="Logo" />
             </div>
             <div className="text">
               <p>
@@ -36,7 +47,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="legal  ">
+      <div className="legal">
         <div
           className="container flexSB"
           style={{ flexDirection: "column", width: "100%" }}
