@@ -91,13 +91,13 @@ const Noticia = () => {
             <section key={id} className="mainContent details">
               <h1 className="title">{item.title}</h1>
 
-              <div className="date">
+              {/*  <div className="date">
                 <p>
                   {item.muni} | {item.cat}
                 </p>
                 <p> postado no dia: </p>
                 <label>{moment(item.date).format("DD-MM-YYYY")}</label>
-              </div>
+              </div> */}
 
               <div className="social">
                 {ShareSocial.map((link) => (
