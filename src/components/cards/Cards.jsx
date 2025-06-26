@@ -82,8 +82,8 @@ const NewCard = ({ regionLink, regionTitle, newsData }) => {
                     ></p>
                     <Share link={`/noticia/${val.id}`} />
               {/*   <i className="fas fa-calendar-days"></i>
-                    <label>{moment(val.date).format("DD-MM-YYYY")}</label>
-                  </div> */}
+                    <label>{moment(val.date).format("DD-MM-YYYY")}</label> */}
+                  </div> 
                 </div>
               </div>
             </div>
