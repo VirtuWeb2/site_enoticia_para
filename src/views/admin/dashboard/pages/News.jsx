@@ -390,9 +390,9 @@ const News = ({ route, setRoute, getNews, news, setNews }) => {
                   ? orderedNews.slice(0, limit).map((item, i) => (
                       <tr key={i} className="table-row">
                         <td className="table-cell">{item.title}</td>
-                        <td className="table-cell">
+                       {/* <td className="table-cell">
                           {moment(item.date).format("DD-MM-YYYY")}
-                        </td>
+                        </td> */}
                         <td
                           className="table-cell"
                           style={{ textTransform: "capitalize" }}
