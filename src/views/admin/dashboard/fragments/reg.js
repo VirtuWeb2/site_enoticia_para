@@ -1,27 +1,44 @@
+
 export const regionesMunicipios = {
-  todos: ["pará"],
-  regiões: [
+  todos: ["pará","temporario"],
+  temporario: [
     "baixo amazonas",
     "baixo tocantins",
-    "araguaia",
+    "belém",
+    "boavistense",
     "caeté",
-    "capim",
-    "carajás",
     "guajarina",
+    "Salgado",
+    "carajás",
+    "capim",
     "lago tucuruí",
     "marajó",
+    
+
+
+  ],
+  regiões: [
+    /*"baixo amazonas",
+    "baixo tocantins",*/
+    "araguaia",
+    /*"caeté"*/,
+    /*"capim"*/,
+    /*"carajás"*/,
+    /*"guajarina"*/,
+    /*"lago tucuruí"*/,
+    /*"marajó"*/,
     "metropolitano",
-    "salgado",
+    /*"salgado"*/,
     "tapajós",
     "xingu",
   ],
-  "baixo amazonas": ["santarém", "juruti"],
+  "baixo amazonas": ["santarém", "juruti","oriximiná","prainha"],
   "baixo tocantins": ["barcarena", "abaetetuba"],
   araguaia: ["são félix do xingu"],
   caeté: ["bragança", "augusto correa", "tracuateua"],
   capim: ["paragominas", "dom eliseu"],
   carajás: ["parauapebas", "itupiranga"],
-  guajarina: ["castanhal"],
+  guajarina: ["castanhal","magalhães barata"],
   "lago tucuruí": ["tucuruí", "goianésia"],
   marajó: [
     "portel",
@@ -32,10 +49,10 @@ export const regionesMunicipios = {
     "oeiras",
     "boavistense",
   ],
-  metropolitano: ["belém", "ananindeua", "marituba", "benevides"],
+  metropolitano: ["belem", "ananindeua", "marituba", "benevides"],
   salgado: ["salinas", "curuçá"],
   tapajós: ["itaituba"],
-  xingu: ["altamira"],
+  xingu: ["altamira","vitoria do xingu"],
 };
 
 export const municipioLinks = {
@@ -66,7 +83,7 @@ export const municipioLinks = {
   soure: "https://www.enoticiasoure.com.br",
   bagre: "https://www.enoticiabagre.com.br",
   muaná: "https://www.enoticiamuana.com.br",
-  belém: "https://www.enoticiabelem.com.br",
+  belem: "https://www.enoticiabelem.com.br",
   marituba: "https://www.enoticiamarituba.com.br",
   benevides: "https://www.enoticiabenevides.com.br",
   salínopolis: "https://www.enoticiasalinopolis.com.br",
@@ -74,7 +91,7 @@ export const municipioLinks = {
   itaituba: "https://www.enoticiaitaituba.com.br",
   altamira: "https://www.enoticiaaltamira.com.br",
   ananindeua: "https://www.enoticiaananindeua.com.br",
-  "são félix do xingu": "https://www.enoticiasaofelizdoxingu.com.br",
+  "vitoria do xingu": "https://www.enoticiavitoriadoxingu.com.br",
   oeiras: "https://www.enoticiaoeiras.com.br",
   boavistense: "https://www.enoticiaboavistense.com.br",
   gurupá: "https://www.enoticiagurupa.com.br",
@@ -84,4 +101,6 @@ export const municipioLinks = {
   salinas: "https://www.enoticiasalinas.com.br",
   itupiranga: "https://www.enoticiaitupiranga.com.br",
   "dom eliseu": "https://www.enoticiadomeliseu.com.br",
+
 };
+
