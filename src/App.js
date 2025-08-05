@@ -150,11 +150,7 @@ const router = createBrowserRouter([
         path: "/regiao/xingu",
         element: <Xingu />,
       },
-      {
-        path: "/regiao/xingu",
-        element: <Xingu />,
-      },
-      {
+      {        
         path: "*",
         element: <Navigate to="/" />,
       }

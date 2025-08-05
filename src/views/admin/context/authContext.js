@@ -11,8 +11,8 @@ export const AuthContexProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const login = async ({ email, password }) => {
     const res = await axios.post(`${baseUrl}/login`, { email, password });
-    // setCurrentUser(res.data);
-    // setIsLoggedIn(true);
+     setCurrentUser(res.data);
+     setIsLoggedIn(true);
   };
   async function validateToken() {
     const token = Cookies.get("authToken");

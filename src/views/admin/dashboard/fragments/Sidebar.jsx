@@ -191,7 +191,7 @@ const Sidebar = ({
               stroke-width="1.5"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-circle-user-round"
+              className="lucide lucide-circle-user-round"
             >
               <path d="M18 20a6 6 0 0 0-12 0" />
               <circle cx="12" cy="10" r="4" />

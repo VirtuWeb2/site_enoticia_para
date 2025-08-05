@@ -24,7 +24,6 @@ export default function resizeImage(file, callback) {
       };
 
       const canvas = document.createElement("canvas");
-      const ctx = canvas.getContext("2d");
       let imgWidth = img.width;
       let imgHeight = img.height;
 
