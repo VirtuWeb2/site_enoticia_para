@@ -5,10 +5,6 @@ import { links } from "./dataLinksReg"; // importa os links das regiões
 const LinksFooterRegioes = () => {
   return (
     <div className="links">
-      <select name="Regioes" placeholder="" id="Regioes">
-        <option value="">Escolha a Região</option>
-        <option value="">É Notícia Araguaia</option>
-      </select>
       {links.map((link, index) => (
         <a
           key={index}

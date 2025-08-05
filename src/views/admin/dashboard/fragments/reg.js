@@ -1,34 +1,19 @@
 
 export const regionesMunicipios = {
-  todos: ["pará","temporario"],
-  temporario: [
+  todos: ["pará"],
+    
+  regiões: [
     "baixo amazonas",
     "baixo tocantins",
-    "belém",
-    "boavistense",
+    "araguaia",
     "caeté",
-    "guajarina",
-    "Salgado",
-    "carajás",
     "capim",
+    "carajás",
+    "guajarina",
     "lago tucuruí",
     "marajó",
-    
-
-
-  ],
-  regiões: [
-    /*"baixo amazonas",
-    "baixo tocantins",*/
-    "araguaia",
-    /*"caeté"*/,
-    /*"capim"*/,
-    /*"carajás"*/,
-    /*"guajarina"*/,
-    /*"lago tucuruí"*/,
-    /*"marajó"*/,
     "metropolitano",
-    /*"salgado"*/,
+    "salgado",
     "tapajós",
     "xingu",
   ],
