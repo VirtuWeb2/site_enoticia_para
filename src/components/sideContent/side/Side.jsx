@@ -14,9 +14,17 @@ const Side = () => {
   const getNews = async () => {
     try {
       const res = await axios.get(`${baseUrl}/news`);
-      setNews(res.data);
+      if(Array.isArray(res.data)) {
+        setNews(res.data);
+      }else{
+        setNews([]);
+        console.warn("Resposta inesperada ao buscar notícias: ", res.data);
+      }
     } catch (err) {
-      console.log(err);
+      console.error("Erro ao buscar as notícias ",err);
+      setError("Não foi possível carregar as notícias.");
+    } finally{
+      setLoadingNews(false);
     }
   };
 
@@ -26,10 +34,20 @@ const Side = () => {
 
   const getAd = async () => {
     try {
+      setLoadingAd(true);
       const res = await axios.get(`${baseUrl}/ad`);
+     if(Array.isArray(res.data)){ 
       setAd(res.data);
-    } catch (err) {
-      console.log(err);
+    } else {
+      setAd([]);
+      console.warn("Resposta inesperada ao buscar anúncios: ", res.data);
+    }
+  }catch (err) {
+      console.error("Erro ao buscar os anúncios ", err);
+      setError("Não foi possível carregar os anúncios.");
+    setAd([]);}
+    finally {
+      setLoadingAd(false);
     }
   };
 
