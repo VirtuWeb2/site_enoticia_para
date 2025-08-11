@@ -22,7 +22,7 @@ const SocialMedia = () => {
         className="socBox whatsapp"
       >
         <i className="fa-brands fa-whatsapp"></i>
-        <span>Curta nossa Pagina no Facebook</span>
+        <span>Entre no nosso canal</span>
       </a>
 
       {/* Telegram - Direto para entrar no canal */}
