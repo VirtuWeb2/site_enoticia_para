@@ -14,17 +14,27 @@ const SocialMedia = () => {
         <i className="fa-brands fa-facebook-f"></i>
         <span>Curta nossa Pagina no Facebook</span>
       </a>
+      {/* Whatsapp - Direto para entrar no canal */}
+      <a
+        href="https://whatsapp.com/channel/0029Vaz5nS6EquiGd2jMQS3w"
+        target="_blank"
+        rel="noreferrer"
+        className="socBox whatsapp"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+        <span>Curta nossa Pagina no Facebook</span>
+      </a>
 
       {/* Telegram - Direto para entrar no canal */}
-      {/* <a
-        href="https://t.me/+Dg8ldGPwsrg3Mzgx"
+      <a
+        href="https://t.me/+Dg8IdGPwsrg3Mzgx"
         target="_blank"
         rel="noreferrer"
         className="socBox telegram"
       >
         <i className="fa-brands fa-telegram"></i>
         <span>Entrar no Canal</span>
-      </a> */}
+      </a>
 
       {/* X (Twitter) - Direto para seguir com confirmação */}
       <a
