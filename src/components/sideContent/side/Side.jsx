@@ -70,7 +70,6 @@ const getNews = async () => {
      return ad.filter((item)=>item.position === position)
       
     }    
-  };
   const filteredBanner = filterBannerPosition("banner side");
 
 
@@ -128,6 +127,7 @@ const getNews = async () => {
         )}
       </section>
     </>
-  );
+  )
+};
 
 export default Side;
